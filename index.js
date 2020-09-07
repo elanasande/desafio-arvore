@@ -37,3 +37,9 @@ let port = 8000;
 app.listen(port, () => {
     console.log('Servidor em execução na porta: ' + port);
 });
+
+const responsavelRouter = require('./modulos/routes/responsavel');
+const livroRouter = require('./modulos/routes/livro.router');
+
+app.use('/responsavel', responsavelRouter());
+app.use('/livro', livroRouter());
