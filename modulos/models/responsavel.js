@@ -19,6 +19,9 @@ const responsavelModel = new Schema({
     telefone: {
         type: String
     },
+    genero: {
+        type: String
+    },
     senha: {
         type: String
     },
